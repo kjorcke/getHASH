@@ -1,16 +1,13 @@
-
-
 .homeTitle {
-    font-family: 'Dosis', sans-serif;
+    font-family: "Dosis", sans-serif;
     font-weight: 700;
     font-size: 100px;
 }
 
 .description {
-    font-family: 'Dosis';
+    font-family: "Dosis";
     font-size: 45px;
 }
-
 
 .btn-navlink {
     text-decoration: none;
@@ -18,14 +15,14 @@
 }
 
 .encodeTitle {
-    font-family: 'Dosis', sans-serif;
+    font-family: "Dosis", sans-serif;
     font-weight: 500;
     font-size: 50px;
     line-height: 1;
 }
 
 .encodeDescription {
-    font-family: 'Dosis', sans-serif;
+    font-family: "Dosis", sans-serif;
     font-weight: 400;
     font-size: 30px;
     line-height: 1.4;
@@ -35,91 +32,129 @@
     max-width: 100%;
 }
 
-
-
-
 .form-control {
- border-radius: 5px;
- width: 350px
+    border-radius: 5px;
+    width: 350px;
 }
 .form-control:focus {
     color: #212529;
     background-color: #fff;
     border-color: #f6f3df;
     outline: 0;
-    box-shadow: 0 0 0 .25rem #faf4cb;
+    box-shadow: 0 0 0 0.25rem #faf4cb;
 }
-
 
 .btn-warning {
     font-size: 25px;
     /*  background-color: #FCEE84; */
-    background-color: #F5EA4C;
-    border-color: #F5EA4C;
+    background-color: #f5ea4c;
+    border-color: #f5ea4c;
 }
 
-.btn-warning:focus{
-    background-color: #F5EA4C;
-    box-shadow: 0 0 0 .25rem #faf4cb;
-    border-color: #F5EA4C;
+.btn-warning:focus {
+    background-color: #f5ea4c;
+    box-shadow: 0 0 0 0.25rem #faf4cb;
+    border-color: #f5ea4c;
 }
 
-.btn-warning:hover{
+.btn-warning:hover {
     background-color: #eae158;
     border-color: #eae158;
 }
 
-.btn-warning:active:focus{
-    background-color: #F5EA4C;
-    box-shadow: 0 0 0 .25rem #faf4cb;
+.btn-warning:active:focus {
+    background-color: #f5ea4c;
+    box-shadow: 0 0 0 0.25rem #faf4cb;
 }
 
 .alert-warning {
     color: #664d03;
-    background-color: #FDFFDF;
+    background-color: #fdffdf;
     border-color: none;
     margin-top: 60px;
-  }
-
-
-
+}
 
 .form-text {
     margin-top: 15px;
     font-size: 20px;
     color: #db2c6f;
     line-height: 1.2;
-  }
+}
 
 .nav-item-brand {
     font-size: 30px;
-    font-family: 'Dosis';
+    font-family: "Dosis";
     font-weight: 700px;
-} 
+}
 .nav-item {
     font-size: 20px;
     font: "dosis";
 }
 
 .nav-link {
-font-size: "30px";    
-display: block;
-color: #212529;
-text-decoration: none;
-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;  
+    font-size: "30px";
+    display: block;
+    color: #212529;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
-
-
-
 
 .resultMessage {
     font-family: "dosis";
     font-size: 28px;
     color: #212529;
-   
-    }
+}
 
 .inlineLink {
     color: #db2c6f;
-    
-}    
+}
+
+.inlineLink:hover {
+    color: #eddd06;
+}
+
+.btn-outline-warning {
+    font-size: 25px;
+    background-color: #ffffff;
+    border-color: #f5ea4c;
+    color: #eddd06;
+}
+
+.btn-outline-warning:focus {
+    background-color: #f5ea4c;
+    box-shadow: 0 0 0 0.25rem #faf4cb;
+    border-color: #f5ea4c;
+    color: #212529;
+}
+
+.btn-outline-warning:hover {
+    background-color: #f5ea4c;
+    border-color: #f5ea4c;
+    color: #212529;
+}
+
+.btn-outline-warning:active:focus {
+    background-color: #f5ea4c;
+    box-shadow: 0 0 0 0.25rem #faf4cb;
+    color: #212529;
+}
+
+.nav-link:hover {
+    color: #eddd06;
+}
+
+.nav-link:focus {
+    color: #db2c6f;
+}
+
+.btn-navlink:hover {
+    color: #212529;
+}
+
+.btn-navlink2 {
+    color: #eddd06;
+    text-decoration: none;
+}
+.btn-navlink2:hover {
+    color: #212529;
+}

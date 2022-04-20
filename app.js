@@ -86,6 +86,7 @@ ngA4S.controller("getHashController", [
             let indexOfLetters;
             let letters = "acdefhlmnoprstuw";
             let decodeString = [];
+            $scope.gotString = ""
             $scope.invalidHash = false
             $scope.userHash = $scope.submittedHash;
             $scope.hashNaN = false
