@@ -1,0 +1,40 @@
+<div class="d-flex row container-fluid justify-content-center" style="height: 94vh">
+    <div class="col-8 d-flex align-items-center" style="margin-bottom: 100px">
+        <div class="d-flex justify-content-center row">
+            
+            <div class="col-6">
+                <div class="bg-white">
+                    <div class="display-1 encodeTitle mb-4">Decode a hash and get the string</div>
+                    <p class="text-wrap encodeDescription mb-4">Please enter a valid hash, e.g. 18794359164</p>
+
+                    <div class="mt-5 d-flex flex-column">
+                        <form class="d-flex" ng-submit="submitGetString()" style="height: 60px">
+                            <div class="customfield">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    style="height: 100%"
+                                    placeholder="enter hash, e.g. 18794359164"
+                                    ng-model="submittedHash"
+                                />
+                            </div>
+                            <button type="submit" class="btn btn-warning ms-4">getString</button>
+                        </form>
+
+                        <div class="form-text" ng-show="hashNaN">Your submitted hash "{{userHash}}" is not a number. Please enter a valid hash</div>
+                        <div class="form-text" ng-show="invalidHash">Your submitted hash "{{userHash}}" proberly not generated with #getHASH. Click <a class="inlineLink" href="index.html#!/encode">here</a> to generate a valid hash!</div>
+                        
+                        <div ng-show="gotString" class="alert-warning">
+                            <div class="p-3 resultMessage">
+                                The decoded string of your submitted hash <u>{{userHash}}</u> is <strong class="">{{gotString}}</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 " style="">
+                <img class="encodeImg" src="content/decode.png" alt="keylock" />
+            </div>
+        </div>
+    </div>
+</div>

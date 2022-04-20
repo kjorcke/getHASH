@@ -1,0 +1,43 @@
+
+
+<div class="d-flex row container-fluid justify-content-center" style="height:94vh">
+
+  <div class="col-8 d-flex align-items-center" style="margin-bottom: 100px;">
+    <div class="d-flex justify-content-center row">
+      
+      <div class="col-6" style="margin-top: 60px">
+        <img class="encodeImg" src="content/encode.png" alt="keylock">
+      </div>
+
+      <div class="col-6 ">
+        <div class="mt-5 ps-5">
+          <div class="display-1 encodeTitle mb-4">Generate a hash from a string</div>
+          <p class="text-wrap encodeDescription mb-4">Please enter a string that contains only the letters <strong> acdefhlmnoprstuw</strong></p>
+          
+          <div class="mt-5 d-flex flex-column ">
+            <form class="d-flex " ng-submit="submitGetHash()" style="height: 60px">
+              <div class="customfield">
+                <input type="text" class="form-control" style="height:100%" placeholder="enter string, e.g. schule" ng-model="string">
+              </div>
+              <button type="submit" class="btn btn-warning ms-4">
+                getHash
+              </button>
+            </form>
+          
+            <div class="form-text" ng-show="invalidString">{{invalidString}}</div>
+            <div ng-show="hash" class="alert-warning">
+              <div class="p-3 resultMessage">The generated hash of your submitted string <u>{{validString}}</u>  is <strong class="">{{hash}}</strong></div>
+            </div>
+         
+            
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  
+
+</div>
