@@ -1,4 +1,4 @@
-var ngA4S = angular.module("ngHash", ["ui.bootstrap", "ngRoute"]);
+var ngA4S = angular.module("ngHash", ["ngRoute"]);
 
 ngA4S.config([
     "$routeProvider",
@@ -27,7 +27,8 @@ ngA4S.run(function () {});
 ngA4S.controller("getHashController", [
     "$scope",
     "$http",
-    function ($scope, $http) {
+    function ($scope) {
+
 
         const getHash = string => {
             var h = 7;
@@ -47,6 +48,7 @@ ngA4S.controller("getHashController", [
         const validateString = string => {
             var letters = "acdefhlmnoprstuw";
             var invalidChar = []
+            var invalidChars;
     
             for (var i = 0; i < string.length; i++) {
                 if (letters.indexOf(string[i]) === -1) {
@@ -54,12 +56,15 @@ ngA4S.controller("getHashController", [
                     invalidChar.push(string[i])
                 }
             }
-            console.log(invalidChar)
-            if (invalidChar.length === 1){
-                //Todo: auf Deutsch formulieren!
-              $scope.invalidString = `Your input "${string}" contains the invalid character ${invalidChar}. Please submit a valid string containing only the letters "acdefhlmnoprstuw"`
-            } else if(invalidChar.length > 1){
-                $scope.invalidString = `Your input "${string}" contains the invalid characters ${invalidChar}. Please submit a valid string containing only the letters "acdefhlmnoprstuw"`
+
+            invalidChars = invalidChar.filter((char, index) => invalidChar.indexOf(char) === index).join(", ");
+
+
+            if (invalidChars.length === 1){
+                
+              $scope.invalidString = `Your input "${string}" contains the invalid character ${invalidChars}. Please submit a valid string containing only the letters "acdefhlmnoprstuw"`
+            } else if(invalidChars.length > 1){
+                $scope.invalidString = `Your input "${string}" contains the invalid characters "${invalidChars}". Please submit a valid string containing only the letters "acdefhlmnoprstuw"`
             }else{
               getHash(string)
               $scope.invalidString = ""
@@ -68,7 +73,6 @@ ngA4S.controller("getHashController", [
         };
 
         $scope.submitGetHash = function () {
-                console.log($scope.string)
                 $scope.hash = "";
                 $scope.invalidString = ""
 

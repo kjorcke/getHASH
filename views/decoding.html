@@ -1,15 +1,15 @@
-<div class="d-flex row container-fluid justify-content-center" style="height: 94vh">
-    <div class="col-8 d-flex align-items-center" style="margin-bottom: 100px">
-        <div class="d-flex justify-content-center row">
+<div class="d-flex row container-xl justify-content-center m-4 me-auto ms-auto" style="height: calc(100vh - 128px)">
+    <div class="col-12 p-0 d-flex align-items-xl-center justify-content-center">
+        <div class="d-flex justify-content-center row g-xs-5 align-items-xl-center ">
             
-            <div class="col-6">
-                <div class="bg-white">
+            <div class="col-xl-6 col-lg-7 col-md-8 col-sm-11 col-xs-8 d-flex justify-content-center " style="height: 500px">
+                <div class="p-5">
                     <div class="display-1 encodeTitle mb-4">Decode a hash and get the string</div>
                     <p class="text-wrap encodeDescription mb-4">Please enter a valid hash, e.g. 18794359164</p>
 
                     <div class="mt-5 d-flex flex-column">
                         <form class="d-flex" ng-submit="submitGetString()" style="height: 60px">
-                            <div class="customfield">
+                            
                                 <input
                                     type="text"
                                     class="form-control"
@@ -17,14 +17,14 @@
                                     placeholder="enter hash, e.g. 18794359164"
                                     ng-model="submittedHash"
                                 />
-                            </div>
-                            <button type="submit" class="btn btn-warning ms-4">getString</button>
+                            
+                            <button type="submit" class="btn btn-warning ms-3">getString</button>
                         </form>
 
                         <div class="form-text" ng-show="hashNaN">Your submitted hash "{{userHash}}" is not a number. Please enter a valid hash</div>
-                        <div class="form-text" ng-show="invalidHash">Your submitted hash "{{userHash}}" proberly not generated with #getHASH. Click <a class="inlineLink" href="index.html#!/encode">here</a> to generate a valid hash!</div>
+                        <div class="form-text" ng-show="invalidHash">Your submitted hash "{{userHash}}" was probably not generated with #getHASH. Click <a class="inlineLink" href="index.html#!/encode">here</a> to generate a valid hash!</div>
                         
-                        <div ng-show="gotString" class="alert-warning">
+                        <div ng-show="gotString" class="mt-5 alert-warning">
                             <div class="p-3 resultMessage">
                                 The decoded string of your submitted hash <u>{{userHash}}</u> is <strong class="">{{gotString}}</strong>
                             </div>
@@ -32,7 +32,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 " style="">
+            <div class="d-none d-sm-none d-md-block col-xl-5 col-lg-5 col-md-4 ms-xl-5 mb-xl-5">
                 <img class="encodeImg" src="content/decode.png" alt="keylock" />
             </div>
         </div>

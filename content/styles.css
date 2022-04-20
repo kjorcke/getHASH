@@ -34,7 +34,6 @@
 
 .form-control {
     border-radius: 5px;
-    width: 350px;
 }
 .form-control:focus {
     color: #212529;
@@ -68,10 +67,9 @@
 }
 
 .alert-warning {
-    color: #664d03;
+    color: #212529;
     background-color: #fdffdf;
     border-color: none;
-    margin-top: 60px;
 }
 
 .form-text {
@@ -158,3 +156,4 @@
 .btn-navlink2:hover {
     color: #212529;
 }
+

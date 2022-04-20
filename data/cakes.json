@@ -1,6 +1,0 @@
-[
-    { "name": "Papageienkuchen", "sterne": 2, "bäcker": "Schwester", "available": true, "color": "purple" },
-    { "name": "Zitronentorte", "sterne": 4, "bäcker": "Kathleen", "available": false, "color": "yellow" },
-    { "name": "Rhabarberkuchen", "sterne": 5, "bäcker": "Kristin", "available": true, "color": "pink" },
-    { "name": "Apfelstreusel", "sterne": 3, "bäcker": "Antje", "available": false, "color": "green" }
-]
